@@ -1,0 +1,98 @@
+.book-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-x {
+  margin-bottom: 40px;
+}
+
+.title-heading {
+  position: relative;
+}
+
+.line {
+  width: 50px;
+  height: 3px;
+  display: inline-block;
+  background-color:#1f1c55;
+  position: relative;
+  top: -10px;
+  right: 0px;
+}
+
+
+
+.details {
+padding-left: 15px;
+padding-bottom: 20px;
+}
+
+img {
+  width: auto;
+    height: 170px;
+    background-size: cover;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .book-wrapper {
+  justify-content: flex-start;
+
+}
+  .mobile-details {
+  padding-left: 15px;
+}
+
+
+.line {
+  width: 25px;
+  height: 2px;
+
+  top: -5px;
+  right: 0px;
+}
+
+}
+
+
+
+
+/* Styles for spinner */
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  left: 50%;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #1f1c55 ;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #1f1c55 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

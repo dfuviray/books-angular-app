@@ -1,0 +1,23 @@
+<section *ngIf="loadedBook; else loading">
+  <div class="grid-x">
+    <div class="medium-3 medium-offset-2">
+      <img [src]="loadedBook.volumeInfo.imageLinks.thumbnail" />
+    </div>
+    <div class="medium-5 details">
+      <h3>{{ loadedBook.volumeInfo.title }}</h3>
+      <p class="authors">{{ loadedBook.volumeInfo.authors[0] }}</p>
+      <div
+        class="description"
+        [innerHTML]="loadedBook.volumeInfo.description"
+      ></div>
+    </div>
+  </div>
+</section>
+<ng-template #loading
+  ><div class="lds-ring">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</ng-template>

@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~foundation-sites/dist/css/foundation.css";
+
+body {
+  color: #1f1c55;
+}
+
+
+h2 {
+  padding-left: 10px;
+  margin-bottom: 40px;
+}
+
+h4 {
+  margin: 0;
+}
+
+.authors {
+   color: rgba(31, 28, 85,.6);
+   margin-bottom: 10px;
+}
+
+.description {
+color: rgba(31, 28, 85,.9);
+}
+
+a {
+  color: #ED254E;
+}
+
+a:hover {
+    text-decoration: underline;
+}

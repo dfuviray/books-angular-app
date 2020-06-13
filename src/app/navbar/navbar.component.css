@@ -1,0 +1,11 @@
+.top-bar {
+  background-color:rgba(31, 28, 85,.8);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+a {
+  color: white;
+  font-size: 1.25rem;
+}
