@@ -5,8 +5,6 @@ import { from } from 'rxjs';
 import { ajax } from 'rxjs/ajax';
 import { map, catchError } from 'rxjs/operators';
 
-import { Books } from './Book';
-
 @Injectable({
   providedIn: 'root',
 })
