@@ -39,9 +39,7 @@
           </div>
 
           <p class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-            delectus sunt velit eum fuga sapiente porro consequatur, eos
-            eligendi. Repudiandae?
+            {{ book.volumeInfo.description | slice: 0:171 }}
             <a [routerLink]="['details', book.id]">Read more... </a>
           </p>
         </div>
